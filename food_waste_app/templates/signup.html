@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <style>
+    body {
+      background-color: skyblue;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      padding-top: 60px;
+      box-sizing: border-box;
+    }
+
+    .form-box {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+
+    .form-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .register-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      float: right;
+      font-weight: bold;
+    }
+
+    .register-btn:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Unave Uyir</div>
+
+  <div class="container">
+    <div class="form-box">
+      <div class="form-title">Personal Details</div>
+      <form action="/register" method="post">
+        <input name="name" placeholder="Name" required>
+        <input name="phone" placeholder="Phone" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <select name="user_type">
+          <option value="donor">Donor</option>
+          <option value="receiver">Receiver</option>
+        </select>
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
