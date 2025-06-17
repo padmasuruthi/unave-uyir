@@ -7,3 +7,5 @@ def get_connection():
         password="xxxxx",
         database="food_waste_db"
     )
+
+#test
